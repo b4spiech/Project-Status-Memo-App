@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Commerce Project — Status Memo</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div>
+          <h1>Digital Commerce Project</h1>
+          <p class="subtitle">Project Status Memo Assistant</p>
+        </div>
+        <button id="generate-memo" class="btn btn-primary">Generate Memo</button>
+      </header>
+
+      <main class="chat">
+        <div id="messages" class="messages"></div>
+        <form id="message-form" class="message-form">
+          <textarea
+            id="message-input"
+            placeholder="Tell me about the project..."
+            rows="2"
+            autocomplete="off"
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <div id="memo-overlay" class="overlay hidden">
+      <div class="memo-panel">
+        <div class="memo-header">
+          <h2>Status Memo Preview</h2>
+          <div class="memo-actions">
+            <button id="download-docx" class="btn btn-primary">Download .docx</button>
+            <button id="close-memo" class="btn btn-secondary">Close</button>
+          </div>
+        </div>
+        <div id="memo-content" class="memo-content"></div>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
